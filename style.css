@@ -1,0 +1,68 @@
+/*
+Body and basic layout styles are now handled by Tailwind CSS in index.html.
+e.g., <body class="bg-gray-100 dark:bg-gray-900 ...">
+
+Header, main, columns, footer layouts are handled by Tailwind flex and grid utilities.
+e.g., <header class="bg-white dark:bg-gray-800 shadow-md p-6">
+      <main class="flex-grow container mx-auto p-6 flex flex-col md:flex-row gap-6">
+
+Form element styling (labels, inputs, textareas) is done with Tailwind classes.
+e.g., <input type="text" class="mt-1 block w-full p-2 border ... dark:bg-gray-700">
+
+Button styling is done with Tailwind classes.
+e.g., <button id="mode-toggle" class="p-2 bg-blue-500 hover:bg-blue-600 ...">
+
+Resume preview area styling is done with Tailwind classes, including typography via `@tailwindcss/typography` (prose classes).
+e.g., <div id="resume-preview" class="border ... prose dark:prose-invert">
+
+Dark mode is handled by Tailwind's `dark:` variants based on the 'dark' class on the <html> element.
+e.g., <body class="dark:bg-gray-900 dark:text-gray-100">
+      <h1 class="text-blue-600 dark:text-blue-400">
+*/
+
+/* Add any custom CSS here that is not easily achievable with Tailwind utility classes. */
+
+/* Example: Custom scrollbar styling (optional, browser support varies) */
+/*
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+body.dark ::-webkit-scrollbar-track {
+    background: #333;
+}
+body.dark ::-webkit-scrollbar-thumb {
+    background: #666;
+}
+body.dark ::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+*/
+
+/* Specific styling for the resume preview content if Tailwind prose is not enough */
+#resume-preview h2 {
+    margin-top: 0; /* Tailwind prose might add margin, override if needed */
+}
+#resume-preview h3 {
+     /* Custom styles for h3 within preview */
+}
+#resume-preview h4 {
+    /* Custom styles for h4 within preview */
+}
+#resume-preview p {
+    /* Custom styles for p within preview */
+}
+#resume-preview hr {
+   margin-top: 0.5rem;
+   margin-bottom: 0.5rem;
+}
